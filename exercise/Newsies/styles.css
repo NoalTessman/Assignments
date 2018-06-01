@@ -1,0 +1,38 @@
+.container {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 100px 500px auto;
+    display: grid;
+    grid-gap: .5em;
+  }
+.title {
+    grid-column: 2 / 4;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    background-color: rgb(233, 233, 233);
+    padding:1fr;
+    font-size:6vw;
+    
+
+}
+.headline{
+    grid-column: 2 / 4; 
+    grid-row: 2 / 3;
+    font-family: 'Times New Roman', Times, serif, monospace;
+    background-color: bisque; 
+    border: 1px;
+    border-color: black;
+    padding:1vw;
+    length:10%;
+    width:100%;
+    word-wrap: break-word;
+}
+p.headline2{
+    text-decoration: underline;
+    font-size: 2vw;
+    display: inline-block;
+    line-break: 2px;
+    float: left;
+    padding:1vw;
+    word-wrap: break-word;
+    overflow: hidden;
+}
