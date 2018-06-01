@@ -1,0 +1,26 @@
+h1{
+color: darkgreen;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    line-height: 25px;
+    margin-top: 2vh;
+
+}
+a{
+    text-decoration: none;
+}
+p.ymal{
+    text-transform: uppercase;
+}
+img {
+    float: left;
+    margin-right:2vw;
+}
+a:hover{
+    text-decoration: underline;
+}

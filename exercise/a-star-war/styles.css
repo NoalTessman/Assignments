@@ -1,0 +1,33 @@
+body {
+    background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+h1{
+    color: #E2E80F;
+    text-align: center; 
+    font-size: 2;
+}
+p{
+    color: #eeeeee;
+    font-size: 1.7;
+    line-height: 2;
+}
+p > span.credits{
+    text-decoration: underline;
+    color: #49DAFF;
+    cursor: pointer;
+
+}
+#film-description{
+    font-size: 0.9;
+    font-style: italic;
+}
