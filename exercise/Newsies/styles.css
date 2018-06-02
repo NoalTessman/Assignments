@@ -1,18 +1,21 @@
 .container {
     grid-template-columns: 1fr 3fr 3fr 1fr;
-    grid-template-rows: 100px 500px auto;
+    grid-template-rows: 100px auto 15%;
     display: grid;
     grid-gap: .5em;
   }
+  body {
+    background-color: gray;
+    background-image: linear-gradient(transparent 50%, rgba(15, 15, 15, 0.5) 50%);
+    background-size: 50px 50px;
+  }
 .title {
     grid-column: 2 / 4;
+    grid-row: 1 / 2;
     text-align: center;
     font-family: 'Poiret One', cursive;
     background-color: rgb(233, 233, 233);
-    padding:1fr;
-    font-size:6vw;
-    
-
+    font-size:6vh;
 }
 .headline{
     grid-column: 2 / 4; 
@@ -23,16 +26,35 @@
     border-color: black;
     padding:1vw;
     length:10%;
-    width:100%;
     word-wrap: break-word;
 }
+img{
+    width: 100px;
+}
+
 p.headline2{
+    float:left;
     text-decoration: underline;
     font-size: 2vw;
-    display: inline-block;
     line-break: 2px;
-    float: left;
-    padding:1vw;
     word-wrap: break-word;
     overflow: hidden;
+    text-align: center;
+    background-image: "tristan-gassert-420689-unsplash.jpg">
+}
+.adfooter{
+    grid-column:2 / 4;
+    grid-row:3 / 4;
+    background-color: beige; 
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 5px;
+}
+.adfooter > div{
+    background: rgb(151, 197, 182);
+    padding: 1em;
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    cursor: pointer;
 }
