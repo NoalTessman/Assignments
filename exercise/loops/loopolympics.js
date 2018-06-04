@@ -67,4 +67,4 @@ for (y = 0; y < 3; y++) {
         array1[y][x]= "x";
     }
 }
-console.log(array1)
+console.log( array1)
