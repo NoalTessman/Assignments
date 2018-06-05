@@ -1,0 +1,76 @@
+*{
+    font-size: 0;
+    margin: 0;
+}
+body{
+    background-image: url('hyunwon-jang-431092-unsplash.jpg') ;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+div.container{
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows:125px 500px 900px;
+    display: grid;
+    position: relative;
+    background-color: C5BD99;
+    grid-gap: 2%;
+}
+div.titel{
+    grid-column:2/3;
+    grid-row: 1/2;
+    background-color: #701112;
+    height:100%;
+    margin:0;
+    position: relative;
+    display: grid;
+    width:100%;
+    grid-template-columns: 6fr 3fr 3fr;
+    margin-top:30px;
+}
+div.title{
+    display: grid;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+    position: relative;
+    grid-column:1/2;
+    color: white;
+    background-color: #9c2224;
+    text-align: center;
+    padding: auto;
+    line-height: 125px;
+}
+div.link{
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 125px;
+    border:1px black;
+}
+div.content{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 2/3;
+        width: 100%;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    padding:40px;
+    color:white;
+}
+div.content:nth-child(odd){
+    grid-row: 3/4;
+    margin-top: 10px;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+img.dog{
+    height:200px;
+    float:left;
+    border-radius: 100%;
+    margin:20px;
+
+}
