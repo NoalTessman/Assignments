@@ -1,0 +1,95 @@
+*{
+    font-size: 0px;
+    margin:0;
+    font-family: 'Song Myung', serif;
+}
+body{
+    background-color: #56a3a6;
+}
+.container{
+    display:grid;
+    grid-template-rows: 7fr 1fr 10fr 1fr 10fr 1fr 13fr 1fr;;
+    grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5%  15%;
+    grid-gap: 10px;
+    height:100vh;
+}
+.title2{
+    grid-column: 2/6;
+    font-size:6vw;
+    grid-row: 1/2;
+    background-color: #f4e8c1;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top:1%;
+    border-radius: 20px;
+    vertical-align: middle;
+    align-self: center;
+}
+.input{
+    grid-column: 2/6;
+    grid-row:3/4;
+    width:100%;
+    height:100%;
+    text-align: center;
+    grid-template-columns:1fr 1fr 1fr;
+    border-radius: 20px;
+    background-color: #b6d6cc;
+    display:grid;
+}
+.inputs{
+    background-color: #b6d6cc;
+    font-size: 8vh;
+    align-self: center;
+    border-radius: 20px;
+}
+.inputs:hover{
+    background-color: #bcdfd4;
+}
+.function{
+    grid-column: 2/6;
+    grid-row:5/6;
+    background-color: #f4e8c1;
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    grid-row: 5/6;
+    display:grid;
+    text-align:center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+}
+.functions{
+    color:black;
+    text-align: center;
+    background-color: #f4e8c1;
+    font-size: 16vh;
+    vertical-align: middle;
+    align-self: center;
+    border-radius: 20px;
+}
+.functions:hover{
+    background-color: #cfc296
+}
+.result{
+    border-radius: 20px;
+    grid-column: 2/6;
+    grid-row: 7/8;
+    background-color: #a89b9d;
+    width:100%;
+    height:100%;
+    margin-bottom: 10px;
+    font-size: 14vh;
+    align-self: center;
+    text-align: center;
+}
+.inputText{
+    font-size: 12vh;
+    background-color: #b6d6cc;
+    padding:none;
+    margin:none;
+    align-self: center;
+    border:none;
+    text-align: center;
+    width:100%;
+}

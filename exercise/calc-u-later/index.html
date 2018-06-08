@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="title2">
+                CALCULATOR
+            </div>
+            <div class="input">
+                <div class="inputs">
+                <input type="number" class="inputText" id="input1" value="0"required>
+                </div>
+                <div class="inputs" id="currentFunction">Current Function</div>
+                <div class="inputs">
+                <input type="number" class="inputText" id="input2" value="0" required>
+                </div>
+            </div>
+        </form>
+            <div class="function">
+                <div class="functions" onclick="changeFunct(0)">+</div>
+                <div class="functions" onclick="changeFunct(1)">-</div>
+                <div class="functions" onclick="changeFunct(2)">/</div>
+                <div class="functions" onclick="changeFunct(3)">*</div>
+            </div>
+            <div class="result" id="result">
+            Result Will appear here<br>
+            (Hit enter to calculate)
+            </div>
+        </div>
+
+        <script src="jayess.js" async defer></script>
+    </body>
+</html>

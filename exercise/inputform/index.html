@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>input form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="titel">Can you be in DBZ?</div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <form name="demoForm" style="text-align: center;">
+            <label for="">Name :<input type="text" name="name"></label><br>
+            <label for="">Email :<input type="email" name="email"></label><br>
+            <label for="">Password :<input type="password" name="password"></label><br>
+            <label for="">Veteren: <input type="checkbox" name="veteren"></label><br>
+            <label for="">Male<input name="Gender" type="radio" value="Male"></label><br>
+            <label for="">Female<input name="Gender" type="radio" value="Female"></label><br>
+            <label for="">Other<input name="Gender" type="radio" value="Other"></label><br>
+            <label for="">Power Level<input type="range" name="dbz" value="250" min="0" max="500"></label><br>
+            <label for="">Date<input type="date" name="date"></label><br>
+            <label for=""><select name="occupation">
+                <option value="welder">Welder</option>
+                <option value="homeless">Homeless</option>
+                <option value="CEO">CEO</optiomn>
+                <option value="instructor at v-school"></option>
+            </select></label>
+            <button name="submit" type="submit">submit</button>
+        </form>
+        <div id="DBZ">
+        </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
