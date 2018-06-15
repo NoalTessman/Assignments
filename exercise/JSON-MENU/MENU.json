@@ -1,0 +1,63 @@
+{
+    "Menu": {
+        "Appetizers": {
+            "Morning": [
+                "pancakes",
+                "Omelettes",
+                "BreadSticks",
+                "OtherThings"
+            ],
+            "Lunch": {
+                "BreadSticks": [
+                    "Bread",
+                    "Sticks",
+                    "No actual sticks"
+                ],
+                "Fries": [
+                    "Potato",
+                    "sticks"
+                ]
+            },
+            "Dinner": {
+                "Burger": {
+                    "name": "Burger",
+                    "Ingredients": ["Bread", "Meat", "That is all you need for a decent burger-'Ron Swanson'"]
+                },
+
+                "Vegetarian Burger": {
+                    "name": "Vege-Burger",
+                    "Ingredients": ["Pretend meat", "Bread sometimes", "Too many things which make it tase slightly less mediocre"]
+                },
+
+                "Nachos": {
+                    "name": "Nachos",
+                    "Ingredients": ["Chips", "Cheese", "Cheddar cheese"]
+                }
+            }
+        },
+        "Hot Sandwhiches": {
+            "Breakfast": [
+                {
+                    "name": "Egg Sandwich",
+                    "ingredients": ["Egg", "Bread", "Other things", "salt"]
+                }
+            ],
+            "lunch": [
+                {
+                    "name": "Reuben",
+                    "Ingredients": ["Bread", "Meat", "Other things too"]
+                }
+            ]
+        },
+
+        "Drinks": [
+            "Coke Products",
+            "Coffee",
+            "Tea",
+            "Milk",
+            "Chocolate Milk",
+            "Boat Nectar"
+        ]
+    }
+
+}
