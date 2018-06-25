@@ -1,0 +1,17 @@
+{
+  "name": "mochatest",
+  "version": "1.0.0",
+  "description": "fdhodhfs",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "author": "",
+  "license": "ISC"
+}
