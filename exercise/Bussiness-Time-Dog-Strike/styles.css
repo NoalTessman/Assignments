@@ -102,7 +102,8 @@ a:hover{
 /* ===+++++++++++++++++About Stuff+++++++++++++++++=== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .Aboutcontent{
-    grid-template-rows: 70px 70px 200px ;
+    grid-template-rows: 70px 70px 70px 70px 200px ;
+    grid-template-columns: 1fr;
     display:grid;
     grid-gap: 3%;
     grid-column: 1/5;
@@ -117,6 +118,7 @@ a:hover{
     grid-template-columns: 1fr 3fr;
     background-color: #8ee4af8d;
     font-size: 1em;
+    grid-column: 1/-1;
 }
 .AboutBox:hover{
     animation-name: ColChange;
@@ -130,6 +132,7 @@ a:hover{
     justify-content: space-evenly;
     align-content: space-around;
     height: 100%;
+    max-width: 96.5%;
     padding-top: 10px;
 }
 @keyframes ColChange{
@@ -139,7 +142,7 @@ a:hover{
 .AboutTitle{
     color:#edf5E1;
     grid-column: 1/5;
-    font-size: 10px;
+    font-size: 1em;
     text-align: center;
 }
 .icon{
@@ -165,6 +168,23 @@ max-width: 90%;
 }
 .input.message{
     height: 100px;
+}
+.bobby{
+    background-image: url(download.jpeg);
+    background-size: cover;
+    max-width: 100%;
+    height: 1000px;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    opacity: 0;
+}
+.bobby:hover{
+    animation-name: Will;
+    animation-duration: 10s;
+}
+@keyframes Will{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 @media( min-width: 700px){
     body{
@@ -196,11 +216,20 @@ max-width: 90%;
         grid-gap: 5%; 
         grid-template-rows: 100px 100px 300px;
     }
+    .AboutBox.one{
+        grid-column: 1/2;
+    }
+    .AboutBox.two{
+        grid-column: 2/3;
+    }
     .AboutTitle{
         font-size: 2rem;
         color:#edf5E1;
         grid-column: 1/4;
         text-align: center;
+    }
+    .AboutBox.email{
+        max-width: 100%;
     }
     .icon{
         display: flex;
