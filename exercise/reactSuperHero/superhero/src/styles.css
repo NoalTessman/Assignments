@@ -1,0 +1,36 @@
+#root{
+    text-align: center;
+}
+body{
+    background-color: rgb(58, 187, 131);
+}
+
+ #StratoGal{
+    alt: "This is Stratogal";
+    background-color: rgba(255, 0, 0, 0.153);
+}
+#GazerBeam{
+    alt:"This is GazerBeam";
+    background-color:rgba(255, 235, 205, 0.295);
+}
+#ThunderHead{
+    alt:"This is ThunderHead";
+    background-color: rgba(255, 0, 0, 0.153);
+}
+#DynaGuy{
+    alt:"This is DynaGuy";
+    background-color:rgba(255, 235, 205, 0.295);
+}
+#SplashDown{
+    alt:"This is SplashDown";
+    background-color:rgba(255, 0, 0, 0.153);
+}
+.Hero{
+    width:100%;
+}
+.HeroCrate{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+}
