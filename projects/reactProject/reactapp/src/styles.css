@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+#container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+.AuthorCrate{
+    grid-auto-columns: 100%;
+    grid-column: 2/3;
+    grid-gap: 10px;
+    grid-auto-rows: 10%;
+    display: grid;
+}
+.Author{
+    background-color: beige;
+}
