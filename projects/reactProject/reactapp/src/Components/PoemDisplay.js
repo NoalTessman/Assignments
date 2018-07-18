@@ -6,13 +6,14 @@ export default class PoemDisplay extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lines: []
+            lines: [],
         };
     }
     componentWillMount() {
         axios.get(`https://vschool-cors.herokuapp.com?url=http://poetrydb.org/title/${this.props.match.params.poem}`)
             .then(response => {
                     this.setState({lines:response.data[0].lines})
+                    this.setState({title:response.data[0].title})
                 })
                     .catch(function (err) {
                     console.log(err)
@@ -27,8 +28,9 @@ export default class PoemDisplay extends Component {
             ))
             return ( 
             <div className = "PoemDisplay" >
+                <div className = "poemTitle">
+                </div>
                 {postPoem}
-                {console.log(this.lines)}
              </div>
             )
         }
