@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDong from "react-dom";
-import AuthorPage from "./AuthorPage.js"
+import App from "./App.js"
 import "./styles.css";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDong.render(
-    <AuthorPage/>,
-document.getElementById('root'));
+ReactDong.render(  
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+, document.getElementById("root"));

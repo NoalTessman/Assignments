@@ -1,18 +1,117 @@
 *{
-    margin:0;
-    padding:0;
+margin:0;
+padding:0;
 }
 #container{
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    background-image: url('thomas-martinsen-2443-unsplash.jpg');
+    background-size: stretch;
+
+}
+/* THIS IS THE STUFF FOR HOME */
+#homeText{
+    grid-column: 2/3;
+    background-color: beige;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+}
+#homeTextTitle{
+    font-size: 1.5em;
+}
+#bolder{    
+    font-style: bold;
+}
+/* THIS IS THE STUFF FOR THE AUTHOR LIST */
+#AuthorTitle{
+    display: flex;
+    font-size: 2em;
+    grid-column: 2/3;
+    background-color:  rgb(255, 255, 215);
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Gaegu', cursive;
+    justify-content: center;
+}
+#SpinnyBoi{
+    /* animation: rotate 5s infinite; */
+}
+@keyframes rotate{
+    0%{transform:rotateZ(0deg)}
+    100%{transform:rotateZ(360deg)}
 }
 .AuthorCrate{
     grid-auto-columns: 100%;
     grid-column: 2/3;
     grid-gap: 10px;
-    grid-auto-rows: 10%;
+    grid-auto-rows: 50px;
     display: grid;
+    font-size: .7em;
 }
 .Author{
     background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+.AuthorTitle{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+.AuthorPoemli{
+    grid-column: 2/3;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: beige;
+}
+.AuthorStyle{
+    word-wrap: break-word;
+}
+.Poemlist{
+    height: 50px;
+    display:flex;
+}
+.PoemCrate{
+    grid-auto-columns: 100%;
+    grid-column: 2/3;
+    grid-gap: 10px;
+    grid-auto-rows: 50px;
+    display: grid;
+    font-size: 1em;
+}
+.PoemTitle{
+    font-size: 2em;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.Poem{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+/* For the individual Poems */
+.PoemDisplay{
+    grid-column: 2/3;
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: 50px;
+    padding-top: 10px;
+}
+.PoemLine{
+    display:flex;
+    font-size: 30px;
+    background-color: rgba(245, 245, 220, 0.377);
+    padding:10px;
+
 }
