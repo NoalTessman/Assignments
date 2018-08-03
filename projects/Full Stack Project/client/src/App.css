@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+}
+#container{
+  display:grid;
+  background-color: 153243;
+  width:100%;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100%;
+}
+#Header{
+  background-color: #153243;
+  color: #edebd7;
+  grid-template-columns: 20% 80%;
+  display:grid;
+  align-items: center;
+  grid-column: 1/-1;
+
+}
+#socialMediaLink{
+  max-height: 50px;
+  max-width: 50px;
+  background-color: #edebd7;
+}
+#SocialMediaSection{
+  grid-column: 1/2;
+}
+#cabinFurniture{
+  grid-column: 2/3;
+  font-size: 2em;
+}
+#AdminHeader{
+  Display:grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.459);
+}
+#body{
+  display:grid;
+}
+#furnitureCard{
+  background-color: #edebd7;
+}
+/* ItemLoader */
+.Item{
+  display:grid;
+  grid-template-rows: 100px 30px 20px;
+  background-color: #edebd7;
+}
+.Item:nth-of-type(even){
+  grid-column: 2/3;
+}
+.ItemContainer{
+  grid-auto-columns: 50%;
+  display:grid;
+  grid-auto-rows: 150px;
+  grid-gap: 20px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.furnPic{
+  size: contain;
+  max-height: 100px;
+  max-width: 100%;
+}
+.furnPicDiv{
+  grid-row: 1/2;
+  display:flex;
+  justify-content: center;
+}
+.furntitle{
+  grid-row:2/3;
+}
+.furnPrice{
+  grid-row: 3/4;
+  display:flex;
+  justify-content: center;
+
+}

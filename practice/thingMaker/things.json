@@ -1,0 +1,20 @@
+[
+    {
+        "type":"Egg",
+        "Philosophy":"Hedonism",
+        "Religion":"None",
+        "Age":"Eternal"
+    },
+    {
+        "type":"Egg",
+        "Philosophy":"Post-Modern",
+        "Religion":"Budhist",
+        "Age":47
+    },
+    {
+        "type":"Egg",
+        "Philosophy":"Christian",
+        "Religion":"Also Christian",
+        "Age":2018
+    }
+]
