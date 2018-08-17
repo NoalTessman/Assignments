@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home'
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import Work from "./Components/Work"
+import Skills from "./Components/Skills"
+import Contact from "./Components/Contact"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 class App extends Component {
   render() {
     return (
       <Router>
       <div>
-      <Home/>
-      <Route path="/" exact="true" Component={Home} />
+        <Switch>
+      <Route path="/" exact="true" component={Home} />
+      <Route path="/Contact" exact="true" component={Contact} />
+      <Route path="/Skills" exact="true" component={Skills} />
+      <Route path="/Work" exact="true" component={Work} />
+        </Switch>
       </div>
       </Router>
     );

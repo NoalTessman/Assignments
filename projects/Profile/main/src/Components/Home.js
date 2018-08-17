@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Typing from "react-typing-animation"
+import {Link} from "react-router-dom"
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll"
 export default class Home extends Component {
@@ -17,24 +18,30 @@ export default class Home extends Component {
         I make websites. 
         <div>
         <Typing.Speed ms={50}/>
-        I want to be a full stack or front end developer.
+        I want to make them for you.
         </div>
       </Typing>
       </div>
       <div className="LinkContainer" >
         <div className="Link">
         <ScrollAnimation animateIn="bounceInRight">
-          Skills
+        <Link to="/Skills">
+          My Skills
+          </Link>
         </ScrollAnimation>
         </div>
         <div className="Link" >
         <ScrollAnimation animateIn="bounceInLeft">
-          Work
+        <Link to="/Work">
+          My Work
+          </Link>
         </ScrollAnimation>
         </div>
         <div className="Link">
         <ScrollAnimation animateIn="bounceInRight">
+        <Link to="/Contact">
           Contact
+          </Link>
         </ScrollAnimation>
         </div>
       </div>
