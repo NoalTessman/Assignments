@@ -17,12 +17,16 @@ export default class Skills extends Component {
             <p className="skillsLang">FlexBox</p>
             <p className="skillsLang">Redux</p>
             <p className="skillsLang">MongoDB</p>
-            <p className="skillsLang">Express</p>
+            <p className="skillsLang">Express.js</p>
             <p className="skillsLang">OKTA</p>
-            <p className="skillsLang">Adobe Photoshop, inDesign</p>
+            <p className="skillsLang">Adobe inDesign</p>
+            <p className="skillsLang">Adobe Premiere</p>
+            <p className="skillsLang">Adobe Photoshop</p>
             <p className="skillsLang">HTML5</p>   
             <p className="skillsLang">MariaDB</p>   
             <p className="skillsLang">Ruby</p>   
+            <p className="skillsLang">BootStrap</p>
+            <p className="skillsLang">ReactStrap</p>
             </div>
         </div>
       </div>

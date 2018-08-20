@@ -1,10 +1,12 @@
 *{
     margin:0;
     padding:0;
+    line-height: 30px;
+    font: 20px georgia, sans-serif;
 }
 .container{
     display:grid;
-    grid-template-rows: 250px 170px 300px 375px 375px;  
+    grid-template-rows: 250px 170px 900px 875px 875px 300px 300px 250px;  
     grid-template-columns: 9% auto 9%;
     font-weight: 400;
 }
@@ -21,14 +23,14 @@
     color: rgb(255, 255, 255);
     border-top: #0a251654 10px solid;
    font-family: "Libre Baskerville", sans-serif;
-   font-size: 11.2px;
+   font-size: 20px;
 }
 
 .summary{
     grid-row:2/3;
     grid-column: 2/3;
     padding-top: 5%;
-    line-height: 26.8667px;
+    line-height: 150px;;
     font-family: "Julius Sans One", sans-serif;
     line-height: 26.8667px;
     font-weight: 400;
@@ -40,12 +42,68 @@
 .roadToEnlightenment{
     grid-row: 3/4;
     grid-column: 2/3;
+    line-height: 37px;
+    font-size: 20px;
+    color: #325050;
 }
 h3{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 20.1667px;
-    color:rgb(46, 72, 76);
+    font-size: 25px;
+    color: #325050;
+    letter-spacing: 7px;
 }
 .enzo{
     height:50px;
+}
+.GreenBoi{
+    grid-column: 1/-1;
+    background-color:#C5DED0; 
+}
+.GreenText{
+    grid-column: 2/3;
+    padding-right: 9%;
+    padding-left: 9%;
+    padding-top: 4%;
+    line-height: 37px;
+    font-size: 20px;
+    color: #325050;
+}
+.requirements{
+    grid-column: 2/3;
+    padding-top: 8%;
+    line-height: 40px;
+    font-size: 17px;
+}
+.DaveShea{
+    display: grid;
+    grid-template-columns: 9% 82% 9%;
+    grid-template-rows: 185.5px 112.5px;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    grid-column: 1/-1;
+}
+.DaveTitle{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-items: center;
+    color: #94ACAD;
+    font-style: italic;
+    justify-content: center;
+    padding-top: 6%;
+    font-size: 25px;
+}
+.DaveEnh{
+    color:white;
+    line-height: 50px;
+    font-style: normal;
+    font-size: 26px;
+}
+.lanks{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #134347;
+    grid-row: 2/3;
+    grid-column: 1/-1;
 }

@@ -18,28 +18,28 @@ export default class Home extends Component {
         I make websites. 
         <div>
         <Typing.Speed ms={50}/>
-        I want to make them for you.
+        I want to become a Full stack Developer
         </div>
       </Typing>
       </div>
       <div className="LinkContainer" >
         <div className="Link">
-        <ScrollAnimation animateIn="bounceInRight">
-        <Link to="/Skills">
+        <ScrollAnimation animateIn="fadeInRight">
+        <Link to="/Skills"  className="homeLink">
           My Skills
           </Link>
         </ScrollAnimation>
         </div>
         <div className="Link" >
-        <ScrollAnimation animateIn="bounceInLeft">
-        <Link to="/Work">
+        <ScrollAnimation animateIn="fadeInLeft">
+        <Link to="/Work"  className="homeLink">
           My Work
           </Link>
         </ScrollAnimation>
         </div>
         <div className="Link">
-        <ScrollAnimation animateIn="bounceInRight">
-        <Link to="/Contact">
+        <ScrollAnimation animateIn="fadeInRight">
+        <Link to="/Contact" className="homeLink">
           Contact
           </Link>
         </ScrollAnimation>

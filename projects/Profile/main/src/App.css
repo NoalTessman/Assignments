@@ -52,15 +52,23 @@ animation: slowAppear 2s;
   display: flex;
   font-size: 2em;
   width: 100%;
-  background-image: url('../src/chinese-motif-photos-motif-1184965.jpg');
+  /* background-image: url('../src/chinese-motif-photos-motif-1184965.jpg'); */
+  background-color: rgb(30, 100, 133);
   max-height: 100%;
   height: 100%;
 }
 .Link{
-  background-color: rgba(10, 77, 10, 0.797);
+
   font-size: 2em;
   color: rgb(84, 173, 84);
 }
+.Link{
+  color: wheat;
+  }
+  .homeLink:visited{
+    color: white;
+  }
+
 .footerContainer{
   grid-column: 2/3;
   
@@ -70,7 +78,7 @@ a{
   text-decoration: none;
 }
 a:visited{
-  color:white;
+  color:black;
 }
 
 
@@ -101,14 +109,13 @@ a:visited{
   display: grid;
   grid-template-columns: 5% 90% 5%;
   grid-template-rows: 50px 70px auto 600px ;
-  font-size: 1.3em;
   background-color:#556;
 background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
 linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
 linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
 linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
-linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+linear-gradient(60deg, rgb(0, 0, 0) 75%, transparent 25.5%, transparent 75%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 75%), 
+linear-gradient(60deg, rgb(0, 0, 0) 25%, transparent 25.5%, transparent 75%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 75%);
 background-size:80px 140px;
 background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 background-attachment: fixed;
@@ -118,7 +125,7 @@ background-attachment: fixed;
   grid-row: 2/3;
   grid-column: 2/3;
   font-size: 2em;
-  background-color: rgba(211, 211, 211, 0.336);
+  color: white;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -201,13 +208,13 @@ background-attachment: fixed;
   font-size: 1.3em;
 background-image: url('../src/vincent-burkhead-147113-unsplash.jpg');
 background-attachment: fixed;
+text-align: center;
 }
 #skillsTitle{
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
   justify-content: center;
-  font-size: 1em;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.8em;
   align-content: center;
@@ -230,6 +237,7 @@ background-attachment: fixed;
   padding:5px;
   transition: .5s;
   margin:5px;
+  overflow: ;
 }
 .skillsLang:hover{
   background-color: white;
@@ -240,11 +248,13 @@ background-attachment: fixed;
 #contactContainer{
   display: grid;
 grid-template-columns: 10% 80% 10%;
-grid-template-rows: 10vh 30vh 60vh;
+grid-template-rows: 10vh 20vh 70vh;
 font-size: 1.3em;
 background-attachment: fixed;
 background-size: contain;
-
+background-image: url(../src/photo-1515595967223-f9fa59af5a3b.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
 }
 #contactTitle{
   grid-column: 2/3;
@@ -264,6 +274,7 @@ background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly
 }
 .contactCard{
   display: flex;
@@ -272,8 +283,9 @@ background-size: contain;
   align-items: center;
   transition:.8s;
 }
-.contactCardTitle:hover{
-  background-color: gray;
+.contactCard:hover{
+  background-color: rgba(153, 153, 153, 0.397);
+  border-radius: 4px;
 }
 .contactCard:nth-child(even){
   flex-direction: row-reverse;
@@ -290,9 +302,9 @@ background-size: contain;
 .contactCardTitle{
   flex: 2;
   font-size: 0.8em;
-  align-items: center;
   display: flex;
   transition: .5s;
+  margin-left: 10px;
 }
 
 @media (min-width: 666px){
@@ -315,19 +327,41 @@ background-size: contain;
     height: 100px;
     font-size: 2em;
    }
+   #skillsTitle{
+     font-size: 2em;
+   }
    #workTitle{
     font-size: 4em;
   }
   #workContainer{
     grid-template-rows: 110px 150px auto 600px ;
   }
+  .contactCardTitle{
+    flex: 2;
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    transition: .5s;
+    margin-left: 10px;
+  }
 }
 @media (min-width: 900px){
+  .contactCardTitle{
+    flex: 2;
+    font-size: 2em;
+    align-items: center;
+    display: flex;
+    transition: .5s;
+    margin-left: 5px;
+  }
   .skillsLang{
     font-size: 3em;
   }
   .skillsLang:hover{
     font-size: 4em;
+  }
+  #skillsTitle{
+    font-size: 3em;
   }
   #overlayMain{
     height: 100px;
