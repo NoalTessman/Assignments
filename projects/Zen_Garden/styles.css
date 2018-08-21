@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'verdemoderna';
+	src:url('verdemoderna.eot');
+	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
+		url('verdemoderna.woff') format('woff'),
+		url('verdemoderna.ttf') format('truetype'),
+		url('verdemoderna.svg#verdemoderna') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}              
 *{
     margin:0;
     padding:0;
@@ -6,7 +16,7 @@
 }
 .container{
     display:grid;
-    grid-template-rows: 250px 170px 900px 875px 875px 300px 300px 250px;  
+    grid-template-rows: 250px 170px 900px 875px 875px 300px 320px 190px;  
     grid-template-columns: 9% auto 9%;
     font-weight: 400;
 }
@@ -14,18 +24,21 @@
     grid-row: 1/2;
     grid-column: 1/-1;
     padding: 20px 0 70px 0;
-    background: #2d6360 50% 0 url(huntington.jpg) no-repeat; /* old IE fallback */
-    background-attachment: fixed, fixed, fixed, scroll;
-    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
-    background-position: 0 0, 0 0, -5px -25px, 0 50%;
-    background-size: cover;
     text-align: center;
     color: rgb(255, 255, 255);
     border-top: #0a251654 10px solid;
    font-family: "Libre Baskerville", sans-serif;
    font-size: 20px;
+   display: grid;
+   grid-template-rows: 85% 20%;
 }
-
+.headerStuff{
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    background-size: cover;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
 .summary{
     grid-row:2/3;
     grid-column: 2/3;
@@ -53,7 +66,35 @@ h3{
     letter-spacing: 7px;
 }
 .enzo{
-    height:50px;
+    height:70px;
+}
+.zenTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/2;
+}
+.zenTitle h1{
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  padding-left: 3%;
+}
+.zentitle h1 span{
+    color: rgb(255, 0, 0);
+}
+.header h2{
+    font-style: italic;
+    color: rgb(170, 170, 170);
+}
+.viewDesign{
+    grid-row: 2/3;
+    background-color: rgba(219, 219, 219, 0.418);
+    display: flex;
+    grid-column: 1/ -1;
+    justify-content: center;
+    align-content: center;
 }
 .GreenBoi{
     grid-column: 1/-1;
@@ -72,7 +113,7 @@ h3{
     grid-column: 2/3;
     padding-top: 8%;
     line-height: 40px;
-    font-size: 17px;
+    font-size: 2vh;
 }
 .DaveShea{
     display: grid;
@@ -106,4 +147,153 @@ h3{
     background-color: #134347;
     grid-row: 2/3;
     grid-column: 1/-1;
+    font-family: "verdemoderna";
+    align-items: center;
 }
+  .lanks a {
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0 0;
+    margin: 0 0.5em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  }
+  .lanks a:hover, .lanks a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+  }
+  .lanks a:visited {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .lanks a::before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+  
+    /* icomoon.io defaults */
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+    .lanks a.zen-validate-html::before {content: "5";}
+    .lanks a.zen-validate-html:hover::before, .lanks a.zen-validate-html:focus::before {content: "%";}
+    .lanks a.zen-validate-css::before {content: "3";}
+    .lanks a.zen-validate-css:hover::before, .lanks a.zen-validate-css:focus::before {content: "#";}
+    .lanks a.zen-license::before {content: "c";}
+    .lanks a.zen-license:hover::before, .lanks a.zen-license:focus::before {content: "C";}
+    .lanks a.zen-accessibility::before {content: "a";}
+    .lanks a.zen-accessibility:hover::before, .lanks a.zen-accessibility:focus::before {content: "A";}
+    .lanks a.zen-github::before {content: "g";}
+    .lanks a.zen-github:hover::before, .lanks a.zen-github:focus::before {content: "G";}
+
+    .whiteFoot{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 9% 82% 9%;
+    }
+    .whiteFootbody{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-column: 2/3;
+        display: grid;
+        justify-content: left;
+    }
+    .whiteFootTitle{
+        display: flex;
+        align-self: center;
+        letter-spacing: 3px;
+        font-size: .7em;
+        font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  color: gray;
+  flex-direction: column;
+    }
+    .whiteFootBy{
+        font-size: .9em;
+    }
+    .whiteFootBy span{
+        font-size: 1em;
+        color:rgba(199, 199, 199, 0.582);
+        font-style: italic;
+        letter-spacing: none;
+    }
+    .greenFoot{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 9% 82% 9%;
+        background-color: #2d6360;
+    }
+    .greenFootBody{
+        grid-template-columns: 50% 50%;
+        grid-column: 2/3;
+        grid-template-rows: 33% 33% 33%;
+        display: grid;
+    }
+    .greenFootTitle{
+        display: flex;
+        align-self: center;
+        letter-spacing: 3px;
+        font-size: .7em;
+        font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  color: gray;
+  flex-direction: column;}
+
+
+        @media only screen and (min-width: 1130px){
+            .container{
+                grid-template-rows: 250px 170px 900px 875px 875px 300px;  
+                grid-template-columns: 5% 60% 5% 30%
+            }
+            .header{
+                grid-column: 1/5;
+            }
+            .GreenBoi{
+                grid-column: 2/3;
+            }
+            .viewDesign{
+                grid-column: 4/5;
+                grid-row: 1/-1;
+                padding:3%;
+            }
+            .whiteFoot{
+                grid-column: 4/5;
+                grid-row: 3/4;
+                background-color: rgba(148, 172, 173, 0.37);
+            }
+            .whiteFootbody{
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+                padding-left: 2%;
+            }
+            .whiteFootTitle{
+                border-bottom: gray 1px dashed;
+            }
+            .greenFoot{
+                grid-column: 4/5;
+                grid-row:4/5;
+            }
+            .greenFootBody{
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+                padding-left: 2%;
+                background-color: #2d63606c;
+            }
+            .sidebarthang{
+                background-color: gray;
+                grid-column: 4/5;
+                grid-row: 1/-1;
+            }
+        }
